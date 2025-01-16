@@ -55,8 +55,4 @@ Silmek istediğiniz film adını girerek, sistemdeki film arşivinden bu filmi k
 - **film_serisi.py**: Film serisini yöneten sınıf ve fonksiyonların yer aldığı dosya.
 - **film_arsiv.py**: Kullanıcı etkileşimini sağlayan ana program dosyası.
 
-## Katkıda Bulunma
-
-Eğer katkıda bulunmak isterseniz, projeyi forks edebilir ve geliştirmelerinizi pull request olarak gönderebilirsiniz.
-
 
