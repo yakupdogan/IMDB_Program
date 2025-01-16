@@ -53,7 +53,7 @@ Silmek istediğiniz film adını girerek, sistemdeki film arşivinden bu filmi k
 
 - **film_serisi.csv**: Film verilerini içeren CSV dosyasının yolu.
 - **film_serisi.py**: Film serisini yöneten sınıf ve fonksiyonların yer aldığı dosya.
-- **film_yonetim.py**: Kullanıcı etkileşimini sağlayan ana program dosyası.
+- **film_arsiv.py**: Kullanıcı etkileşimini sağlayan ana program dosyası.
 
 ## Katkıda Bulunma
 
