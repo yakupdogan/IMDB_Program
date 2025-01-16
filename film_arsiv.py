@@ -1,6 +1,7 @@
 
 from film_serisi import *
 import time
+import os
 
 print("""
 Film arşivine hoşgeldiniz.
@@ -19,7 +20,7 @@ Film arşivine hoşgeldiniz.
 Çıkmak için 'q' ya basınız.
 
 """)
-film = Film_serisi("C:/Users/90539/Desktop/film_serisi.csv")
+film = Film_serisi("./film_serisi.csv")
 while True:
     islemler = input("İşlem seçiniz : ")
     if(islemler) == "q":
@@ -54,8 +55,10 @@ while True:
         print(film.film_sil(film_adi))
 
     elif(islemler == "8"):
-        yeni_kopya_yolu = "C:/Users/90539/Desktop/yenifilm_serisi.csv"
-        print(f"Veriler başarıyla {yeni_kopya_yolu} yoluna kaydedilmiştir..")
+        masaustu_yolu = os.path.join(os.path.expanduser("~"), "Desktop", "yenifilm_serisi.csv")
+
+        film.data.to_csv(masaustu_yolu, index=False)
+        print(f"Veriler başarıyla {masaustu_yolu} yoluna kaydedilmiştir..")
 
     else:
         print("Geçersiz işlem girdiniz...")
